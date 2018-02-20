@@ -189,7 +189,6 @@
 				-webkit-animation:right_stroke 10s 1s linear infinite;
 			}
 
-
 			.cls-160{
 				stroke-dasharray: 2000 1000;
 				-webkit-animation:right_stroke 10s 1s linear infinite;
@@ -224,6 +223,109 @@
 				stroke-dasharray: 2000 1000;
 				-webkit-animation:right_stroke 10s 8.5s linear infinite;
 			}
+
+
+			/*-------ROTATE ANIMATION-------*/
+
+			@-webkit-keyframes rotate{
+				0% {
+					/*stroke-dashoffset: 0;*/
+					
+				}
+				100% {
+					/*stroke-dashoffset: 4000;*/
+					/*fill: white;*/
+					/*transform-origin: 80% 10%;*/
+					transform: rotate(360deg);
+
+				}
+			}
+
+			@-webkit-keyframes rotate-rev{
+				0% {
+					/*stroke-dashoffset: 0;*/
+					
+				}
+				100% {
+					/*stroke-dashoffset: 4000;*/
+					/*fill: white;*/
+					/*transform-origin: 80% 10%;*/
+					transform: rotate(-360deg);
+
+				}
+			}
+
+			.cls-5:nth-of-type(1){
+				stroke-dasharray: 170;
+				stroke-dashoffset: 20;
+				fill: white;
+				transform-origin: 50% 41.5%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(2){
+				stroke-dasharray: 170;
+				stroke-dashoffset: 20;
+				fill: white;
+				transform-origin: 50% 50%;
+
+				-webkit-animation: rotate-rev 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(3){
+				stroke-dasharray: 170;
+				stroke-dashoffset: 20;
+				fill: white;
+				transform-origin: 50% 58.5%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(12){
+				
+				transform-origin: 55% 1290%;
+
+				-webkit-animation: rotate-rev 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(7){
+				
+				transform-origin: 1290% 50%;
+
+				-webkit-animation: rotate-rev 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(6){
+				
+				transform-origin: 1050% 1090%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(13){
+				
+				transform-origin: -1000% 1075%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(8){
+				
+				transform-origin: 760% -700%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+			.cls-5:nth-of-type(9){
+				
+				transform-origin: -660% -690%;
+
+				-webkit-animation: rotate 5s linear infinite;
+			}
+
+
+
 		</style>
 	</head>
 	<body>
